@@ -11,26 +11,32 @@
     <header class="header">
       <nav class="absolute">
         <ul
-          class="flex gap-[1.6rem] py-[2.4rem] px-[2.4rem] items-end justify-start"
+          class="flex gap-[1.6rem] py-[2.4rem] px-[2.4rem] items-center justify-start"
         >
-          <li><img src="images/logo.svg" alt="logo" class="pr-[1.2rem]" /></li>
+          <li>
+            <img
+              src="images/logo.svg"
+              alt="logo"
+              class="pr-[1.2rem] mr-[1.2rem]"
+            />
+          </li>
           <li
-            class="text-white relative before:transition-all before:duration-[600ms] before:content-[] before:absolute before:w-[0] before:h-[2px] before:bg-white before:left-[0px] before:bottom-[-5px] hover:before:w-[100%] hover:cursor-pointer"
+            class="text-white relative text-[1.6rem] before:transition-all before:duration-[600ms] before:content-[] before:absolute before:w-[0] before:h-[2px] before:bg-white before:left-[0px] before:bottom-[-5px] hover:before:w-[100%] hover:cursor-pointer"
           >
             home
           </li>
           <li
-            class="text-white relative before:transition-all before:duration-[600ms] before:content-[] before:absolute before:w-[0] before:h-[2px] before:bg-white before:left-[0px] before:bottom-[-5px] hover:before:w-[100%] hover:cursor-pointer"
+            class="text-white relative text-[1.6rem] before:transition-all before:duration-[600ms] before:content-[] before:absolute before:w-[0] before:h-[2px] before:bg-white before:left-[0px] before:bottom-[-5px] hover:before:w-[100%] hover:cursor-pointer"
           >
             shop
           </li>
           <li
-            class="text-white relative before:transition-all before:duration-[600ms] before:content-[] before:absolute before:w-[0] before:h-[2px] before:bg-white before:left-[0px] before:bottom-[-5px] hover:before:w-[100%] hover:cursor-pointer"
+            class="text-white relative text-[1.6rem] before:transition-all before:duration-[600ms] before:content-[] before:absolute before:w-[0] before:h-[2px] before:bg-white before:left-[0px] before:bottom-[-5px] hover:before:w-[100%] hover:cursor-pointer"
           >
             about
           </li>
           <li
-            class="text-white relative before:transition-all before:duration-[600ms] before:content-[] before:absolute before:w-[0] before:h-[2px] before:bg-white before:left-[0px] before:bottom-[-5px] hover:before:w-[100%] hover:cursor-pointer"
+            class="text-white relative text-[1.6rem] before:transition-all before:duration-[600ms] before:content-[] before:absolute before:w-[0] before:h-[2px] before:bg-white before:left-[0px] before:bottom-[-5px] hover:before:w-[100%] hover:cursor-pointer"
           >
             contact
           </li>
@@ -39,12 +45,52 @@
     </header>
     <main class="main">
       <div class="slideshow">
-        <div class="img">
-          <img
-            src="images/desktop-image-hero-1.jpg"
-            alt="furniture__desgin"
-            class="w-[70vw] h-[70vh]"
-          />
+        <div class="slide slide__1 grid grid-cols-[1fr_1fr_0.6fr_1fr]">
+          <div class="slide__img col-end-3 col-start-1">
+            <img
+              src="images/desktop-image-hero-1.jpg"
+              alt="furniture__desgin"
+              class="w-[100%] h-[60vh]"
+            />
+          </div>
+          <div
+            class="slide__info text-white bg-white p-[9.6rem] col-start-3 col-end-5 flex flex-col relative h-[60vh]"
+          >
+            <h1
+              class="slide__info--title text-black text-[3.6rem] leading-[1.2] font-bold mb-[2.4rem]"
+            >
+              Manufactured with the best materials
+            </h1>
+            <p
+              class="slide__info--text text-[1.4rem] text-gray-400 mb-[2.4rem]"
+            >
+              Our modern furniture store provide a high level of quality. Our
+              company has invested in advanced technology to ensure that every
+              product is made as perfect and as consistent as possible. With
+              three decades of experience in this industry, we understand what
+              customers want for their home and office.
+            </p>
+            <div
+              class="slide__info--cta flex gap-[1.2rem] transition-all hover:invert-[60%] hover:cursor-pointer"
+            >
+              <p
+                class="text-black text-[1.8rem] tracking-[0.8rem] transition-all"
+              >
+                SHOP NOW
+              </p>
+              <img src="images/icon-arrow.svg" class="w-[20%]" />
+            </div>
+            <div
+              class="img__slider--box flex bg-black gap-[8rem] py-[2.4rem] px-[3.6rem] absolute bottom-[0rem] left-[0rem]"
+            >
+              <div class="img__slider--left">
+                <img src="images/icon-angle-left.svg" />
+              </div>
+              <div class="img__slider--right">
+                <img src="images/icon-angle-right.svg" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
