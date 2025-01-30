@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="absolute">
+        <ul
+          class="flex gap-[1.6rem] py-[2.4rem] px-[2.4rem] items-end justify-start"
+        >
+          <li><img src="images/logo.svg" alt="logo" class="pr-[1.2rem]" /></li>
+          <li
+            class="text-white relative before:transition-all before:duration-[600ms] before:content-[] before:absolute before:w-[0] before:h-[2px] before:bg-white before:left-[0px] before:bottom-[-5px] hover:before:w-[100%] hover:cursor-pointer"
+          >
+            home
+          </li>
+          <li
+            class="text-white relative before:transition-all before:duration-[600ms] before:content-[] before:absolute before:w-[0] before:h-[2px] before:bg-white before:left-[0px] before:bottom-[-5px] hover:before:w-[100%] hover:cursor-pointer"
+          >
+            shop
+          </li>
+          <li
+            class="text-white relative before:transition-all before:duration-[600ms] before:content-[] before:absolute before:w-[0] before:h-[2px] before:bg-white before:left-[0px] before:bottom-[-5px] hover:before:w-[100%] hover:cursor-pointer"
+          >
+            about
+          </li>
+          <li
+            class="text-white relative before:transition-all before:duration-[600ms] before:content-[] before:absolute before:w-[0] before:h-[2px] before:bg-white before:left-[0px] before:bottom-[-5px] hover:before:w-[100%] hover:cursor-pointer"
+          >
+            contact
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="slideshow">
+        <div class="img">
+          <img
+            src="images/desktop-image-hero-1.jpg"
+            alt="furniture__desgin"
+            class="w-[70vw] h-[70vh]"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
