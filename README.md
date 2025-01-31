@@ -13,7 +13,7 @@
 - See hover states for all interactive elements on the page
 ## Demo
 
-https://raeef-room-homepage-api.netlify.app
+https://raeef-room-homepage.netlify.app
 
 
 ## Lessons
