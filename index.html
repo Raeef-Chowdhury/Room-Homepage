@@ -44,9 +44,9 @@
       </nav>
     </header>
     <main class="main">
-      <div class="slideshow transition-all">
+      <div class="slideshow transition-all flex w-[300vw]">
         <div
-          class="slide slide__1 grid grid-cols-[1fr_1fr_0.6fr_1fr] transition-all absolute transition-all"
+          class="slide slide__1 grid-cols-[repeat(2,_1fr)_0.4fr_1fr] grid transition-all relative w-[100vw]"
         >
           <div class="slide__img col-end-3 col-start-1">
             <img
@@ -56,7 +56,7 @@
             />
           </div>
           <div
-            class="slide__info text-white bg-white p-[9.6rem] col-start-3 col-end-5 flex flex-col relative h-[60vh]"
+            class="slide__info text-white bg-white px-[9.6rem] py-[6.4rem] col-start-3 col-end-5 flex flex-col relative h-[60vh]"
           >
             <h1
               class="slide__info--title text-black text-[3.6rem] leading-[1.2] font-bold mb-[2.4rem]"
@@ -95,7 +95,7 @@
           </div>
         </div>
         <div
-          class="slide slide__2 grid grid-cols-[1fr_1fr_0.6fr_1fr] transition-all absolute"
+          class="slide slide__2 grid-cols-[repeat(2,_1fr)_0.4fr_1fr] grid transition-all relative w-[100vw]"
         >
           <div class="slide__img col-end-3 col-start-1">
             <img
@@ -105,7 +105,7 @@
             />
           </div>
           <div
-            class="slide__info text-white bg-white p-[9.6rem] col-start-3 col-end-5 flex flex-col relative h-[60vh]"
+            class="slide__info text-white bg-white px-[9.6rem] py-[6.4rem] col-start-3 col-end-5 flex flex-col relative h-[60vh]"
           >
             <h1
               class="slide__info--title text-black text-[3.6rem] leading-[1.2] font-bold mb-[2.4rem]"
@@ -144,7 +144,7 @@
           </div>
         </div>
         <div
-          class="slide slide__3 grid grid-cols-[1fr_1fr_0.6fr_1fr] transition-all absolute"
+          class="slide slide__3 grid-cols-[repeat(2,_1fr)_0.4fr_1fr] grid transition-all relative w-[100vw]"
         >
           <div class="slide__img col-end-3 col-start-1">
             <img
@@ -154,7 +154,7 @@
             />
           </div>
           <div
-            class="slide__info text-white bg-white p-[9.6rem] col-start-3 col-end-5 flex flex-col relative h-[60vh]"
+            class="slide__info text-white bg-white px-[9.6rem] py-[6.4rem] col-start-3 col-end-5 flex flex-col relative h-[60vh]"
           >
             <h1
               class="slide__info--title text-black text-[3.6rem] leading-[1.2] font-bold mb-[2.4rem]"
@@ -191,6 +191,33 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="about__section grid grid-cols-[repeat(2,1fr)_0.4fr_1fr]">
+        <div
+          class="about__section--img col-start-1 col-end-2 w-[100%] h-[100%]"
+        >
+          <img src="images/image-about-dark.jpg" class="w-[110%] h-[110%]" />
+        </div>
+        <div
+          class="about__section--text col-start-2 col-end-4 p-[6.4rem] flex flex-col gap-[2.4rem]"
+        >
+          <h1
+            class="about__section--heading tracking-[0.2rem] text-black font-semibold text-[3.6rem]"
+          >
+            ABOUT OUR FURNITURE
+          </h1>
+          <p class="about__section--info text-grey-500 text-[1.4rem]">
+            Our multifunctional collection blends design and function to suit
+            your individual taste.Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </p>
+        </div>
+        <div class="about__section--img">
+          <img src="images/image-about-light.jpg" class="w-[110%] h-[110%]" />
         </div>
       </div>
     </main>

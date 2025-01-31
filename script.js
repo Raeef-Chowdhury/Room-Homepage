@@ -1,34 +1,28 @@
 const slides = document.querySelectorAll(".slide");
+const slideshow = document.querySelector(".slideshow");
 const btnLeft = document.querySelectorAll(".img__slider--left");
 const btnRight = document.querySelectorAll(".img__slider--right");
-console.log(btnLeft);
-
-console.log(slides);
 
 let curSlide = 0;
 const maxSlide = slides.length;
+
 const goToSlide = (slide) => {
-  slides.forEach((s, i) => {
-    s.style.transform = `translateX(${100 * (i - slide)}%)`; // Arrange slides horizontally
-  });
+  slideshow.style.transform = `translateX(-${100 * slide}vw)`;
 };
+
+// Initialize to show first slide
 goToSlide(curSlide);
+
 const prevSlide = () => {
-  if (curSlide === 0) {
-    curSlide = maxSlide - 1;
-  } else {
-    curSlide--;
-  }
+  curSlide = curSlide === 0 ? maxSlide - 1 : curSlide - 1;
   goToSlide(curSlide);
 };
+
 const nextSlide = () => {
-  if (curSlide === maxSlide - 1) {
-    curSlide = 0;
-  } else {
-    curSlide++;
-  }
+  curSlide = curSlide === maxSlide - 1 ? 0 : curSlide + 1;
   goToSlide(curSlide);
 };
+
+// Attach event listeners to navigation buttons
 btnLeft.forEach((btn) => btn.addEventListener("click", prevSlide));
 btnRight.forEach((btn) => btn.addEventListener("click", nextSlide));
-console.log(btnLeft);
