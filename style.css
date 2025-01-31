@@ -1,6 +1,7 @@
 body {
   font-size: 62.5%;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 html {
   font-size: 62.5%;
@@ -10,4 +11,9 @@ html {
 }
 .slideshow {
   width: 300vw;
+}
+@media (max-width: 840px) {
+  html {
+    font-size: 50%;
+  }
 }
